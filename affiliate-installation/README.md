@@ -43,7 +43,7 @@ Adding the following markup will create a Meet Me -button pointing to the user m
 
 ##### Button list markup
 
-Adding the following markup will create a list of meet me buttons for all users in the associated application backend:
+Adding the following markup will create a list of meet me buttons for all users in the associated application backend (currently only for the CSV listing backend):
 
     <script type="MTN/list"></script>
 
@@ -75,7 +75,7 @@ A method relying on symmetric encryption of the emails is on the roadmap and wil
 
 A properly formatted CSV file must be UTF-8 encoded, must contain unique column names as the first row and must contain the column names "TOKEN" and "EMAIL" (case insensisive). Here is the CSV spec we honor: http://tools.ietf.org/html/rfc4180
 
-The CSV file can also additional columns, all of which are passed to the Meetin.gs button customization infrastructure as named parameters. If an additional column conflicts with one of Meetin.gs provided additional columns, the value acts as a default value. Default values will be replaced with Meetin.gs values if the user in question has registered to Meetin.gs and the information in question has been provided for that user.
+The CSV file can also contain additional columns, all of which are passed to the Meetin.gs button customization infrastructure as named parameters. If an additional column conflicts with one of Meetin.gs provided additional columns, the value acts as a default value. Default values will be replaced with Meetin.gs values if the user in question has registered to Meetin.gs and the information in question has been provided for that user.
 
 We encourage using a Google Spreadsheets document which can be easily shared in CSV form using an URL. You can for example duplicate the test document that is used to generate the initial testing CSV:
 
